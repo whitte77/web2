@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ne555",
+        "nome": "NE555",
+        "funcao": "CMOS RC temporizador/oscilador",
+    "imagem": "../images/ne555-1.png",
+    "preview": {
+      "preview1": "../images/ne555-1.png",
+      "preview2": "../images/ne555-2.png"
+    },
+        "cartImg": "../images/ne555-1.png",
+        "imagemExemplo": "../images/ne555-example.png",
+        "descricao": "O NE555 é um popular IC temporizador de 5V a 15V capaz de produzir atrasos de tempo, oscilações ou modulação por largura de pulso precisos. Apresentando um intervalo de tempo e frequência ajustáveis, o NE555 permite uma configuração flexível nos modos monoestável, astável ou biestável para atender a várias aplicações de temporização. Seu circuito interno inclui comparadores, um flip-flop, um transistor de descarga e um driver de saída, garantindo desempenho estável com componentes externos mínimos. A saída do NE555 é compatível com TTL, facilitando a interface com outros circuitos lógicos.",
+        "preco": "1.75"
+    },
+    {
+        "id": "raspberry",
+        "nome": "Raspberry PI 5",
+        "funcao": "Placa compacta com um poderoso processador.",
+        "imagem": "../images/raspberry-1.jpg",
+    "preview": {
+      "preview1": "../images/raspberry-1.jpg",
+      "preview2": "../images/raspberry-2.jpg"
+    },
+        "cartImg": "../images/raspberry-1.jpg",
+        "imagemExemplo": "../images/raspberry-example.webp",
+        "descricao": "O Raspberry Pi 5 é um microcomputador versátil que oferece desempenho poderoso para uma variedade de aplicações, incluindo prototipagem, projetos educacionais e desenvolvimento de IoT. Equipado com um processador quad-core ARM Cortex-A76, ele oferece um aumento substancial de desempenho em comparação com os modelos anteriores, tornando-o adequado para tarefas mais exigentes. Com recursos aprimorados, como saída de vídeo 4K, USB 3.0 e até 8 GB de RAM, o Raspberry Pi 5 é a escolha ideal para desenvolvedores, fabricantes e educadores que procuram uma plataforma compacta e capaz para criar soluções inovadoras.",
+        "cartdesc": "Um microcomputador compacto e de alto desempenho para aplicações versáteis.",
+        "preco": "32.00"
+    },
+    {
+        "id": "stm32l010c6",
+        "nome": "STM32L010C6",
+        "funcao": "MCU com baixo consumo de energia",
+        "imagem": "../images/stm32-1.webp",
+    "preview": {
+      "preview1": "../images/stm32-1.webp",
+      "preview2": "../images/stm32-2.png"
+    },
+        "cartImg": "../images/stm32-1.webp",
+        "imagemExemplo": "../images/stm32-example.png",
+        "descricao": "O STM32L010C6 é um microcontrolador de ultrabaixo consumo de energia construído em torno de um núcleo ARM Cortex-M0, especificamente otimizado para aplicações onde o baixo consumo de energia é uma prioridade. Operando em uma ampla faixa de tensão, o STM32L010C6 é ideal para projetos alimentados por bateria ou de coleta de energia, ajudando a prolongar a vida útil da bateria sem comprometer o desempenho. Este microcontrolador apresenta modos avançados de economia de energia, incluindo opções de suspensão de baixa potência e sono profundo, permitindo transições rápidas entre estados ativos e ociosos com tempos de despertar rápidos, uma característica essencial para dispositivos vestíveis, monitores médicos e sensores remotos.",
+        "cartdesc": "Um microcontrolador de baixa potência ideal para sistemas embarcados com eficiência energética.",
+        "preco": "4.60"
+    }
+]

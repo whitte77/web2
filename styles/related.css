@@ -1,0 +1,138 @@
+.related {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.related-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18pt;
+  color: white;
+  background: #4682b4;
+}
+
+.related-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  flex-grow: 1;
+
+  flex-wrap: wrap;
+  /* background: white; */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  gap: 2%;
+  padding: 12px 20px;
+}
+
+.product-title {
+  text-decoration: none;
+  color: #6490b4;
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+#product-title {
+  color: #4682b4;
+  font-family: Roboto;
+  font-weight: 600;
+  height: 20%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.product-title:hover {
+  color: #6490b4;
+}
+
+.product-icon {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  gap: 2%;
+}
+
+.icon-block {
+  display: flex;
+  align-items: center;
+  background: lightgrey;
+  border-radius: 5px;
+  padding: 2px 2px;
+  height: 75%;
+  cursor: pointer;
+}
+
+.icon-block:hover {
+  opacity: 0.8;
+}
+
+.icon-block img {
+  height: 30px;
+}
+
+.product-value {
+  display: flex;
+  align-items: end;
+  height: 15%;
+  font-size: 8pt;
+}
+
+.product-description {
+  display: flex;
+  align-items: center;
+  height: 35%;
+  font-size: 10pt;
+}
+
+.related-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.related-vmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Roboto;
+  font-size: 12pt;
+  background: #4682b4;
+  min-width: 180px;
+  min-height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.related-vmore:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .related-products {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .related-title {
+    margin-bottom: 25px;
+  }
+
+  .product {
+    min-width: 350px;
+  }
+}

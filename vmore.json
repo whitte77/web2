@@ -1,0 +1,46 @@
+[
+    {
+        "id": "ne555",
+        "nome": "NE555",
+        "funcao": "CMOS RC timer/oscillator",
+		"imagem": "../images/ne555-1.png",
+		"preview": {
+			"preview1": "../images/ne555-1.png",
+			"preview2": "../images/ne555-2.png"
+		},
+        "cartImg": "../images/ne555-1.png",
+        "imagemExemplo": "../images/ne555-example.png",
+        "descricao": "The NE555 is a popular 5V to 15V timer IC capable of producing accurate time delays, oscillations, or pulse-width modulation. Featuring an adjustable time interval and frequency, the NE555 allows flexible configuration in monostable, astable, or bistable modes to suit various timing applications. Its internal circuitry includes comparators, a flip-flop, a discharge transistor, and an output driver, ensuring stable performance with minimal external components. The NE555’s output is TTL-compatible, making it easy to interface with other logic circuits.",
+        "preco": "1.75"
+    },
+    {
+        "id": "raspberry",
+        "nome": "Raspberry PI 5",
+        "funcao": "Compact board with powerful processing.",
+        "imagem": "../images/raspberry-1.jpg",
+		"preview": {
+			"preview1": "../images/raspberry-1.jpg",
+			"preview2": "../images/raspberry-2.jpg"
+		},
+        "cartImg": "../images/raspberry-1.jpg",
+        "imagemExemplo": "../images/raspberry-example.webp",
+        "descricao": "The Raspberry Pi 5 is a versatile microcomputer that offers powerful performance for a variety of applications, including prototyping, educational projects, and IoT development. Equipped with a quad-core ARM Cortex-A76 processor, it provides a substantial performance boost compared to previous models, making it suitable for more demanding tasks. With enhanced features like 4K video output, USB 3.0, and up to 8GB of RAM, the Raspberry Pi 5 is an ideal choice for developers, makers, and educators looking for a compact yet capable platform for building innovative solutions.",
+        "cartdesc": "A compact, high-performance microcomputer for versatile applications.",
+        "preco": "32.00"
+    },
+    {
+        "id": "stm32l010c6",
+        "nome": "STM32L010C6",
+        "funcao": "Ultra-low-power microcontroller",
+        "imagem": "../images/stm32-1.webp",
+		"preview": {
+			"preview1": "../images/stm32-1.webp",
+			"preview2": "../images/stm32-2.png"
+		},
+        "cartImg": "../images/stm32-1.webp",
+        "imagemExemplo": "../images/stm32-example.png",
+        "descricao": "The STM32L010C6 is an ultra-low-power microcontroller built around an ARM Cortex-M0 core, specifically optimized for applications where low energy consumption is a top priority. Operating across a wide voltage range, the STM32L010C6 is ideal for battery-powered or energy-harvesting designs, helping to extend battery life without compromising performance. This microcontroller features advanced power-saving modes, including low-power sleep and deep-sleep options, enabling rapid transitions between active and idle states with fast wake-up times—an essential trait for wearable devices, medical monitors, and remote sensors.",
+        "cartdesc": "A low-power microcontroller ideal for energy-efficient embedded systems.",
+        "preco": "4.60"
+    }
+]

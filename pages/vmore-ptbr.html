@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/general.css" rel="stylesheet">
+    <link href="../styles/header1-en.css" rel="stylesheet">
+    <link href="../styles/header2.css" rel="stylesheet">
+    <link href="../styles/vmore.css" rel="stylesheet">
+    <link href="../styles/footer.css" rel="stylesheet">
+    <link href="../styles/cart.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Produto</title>
+</head>
+
+<body>
+
+    <div class="header1">
+
+        <div class="header1-left-section"></div>
+
+        <div class="header1-middle-section">
+            <div class="header1-middle-op">
+                <div class='opportunities-symbol'>
+                    <img class='networking-icon' src='../icons/networking.svg'>
+                    <p class='header-text'>Oportunidades</p>
+                </div>
+            </div>
+            <div class="header1-middle-sup">
+                <div class='support-symbol'>
+                    <img class='support-icon' src='../icons/support.png'>
+                    <p class='header-text'>Equipe de suporte</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header1-right-section">
+
+            <div>
+                <a class='header1-lang-en' onclick= "changeLanguage('en')">
+                Inglês
+            </div>
+
+            <a class="header1-lang-br">
+                Português
+            </a>
+            <!-- <div class="header1-lang-br">Portuguese</div> -->
+        </div>
+    </div>
+    </div>
+
+    <!-- header 2 -->
+    <div class="header2">
+
+        <a class="left-section" href='../index-ptbr.html'>
+            <img class="img-logo" src="../icons/logosite.png">
+        </a>
+
+        <div class="middle-section">
+
+            <select>
+                <option>Tudo</option>
+                <option>Circuitos Integrados</option>
+                <option>Transistores</option>
+                <option>Módulos</option>
+            </select>
+            <input placeholder="Procure por um produto" type="search">
+
+            <div class='search-box'>
+                <img class="lupa" src="../icons/lupa.svg">
+            </div>
+
+        </div>
+
+
+        <div class="right-section">
+            <div class="about">
+                Sobre nós
+            </div>
+
+            <div class="cart-n-account">
+                <a class="cart" href="cart-ptbr.html">
+                    <img class="cart-icon" src="../icons/cart-shopping.svg">
+                </a>
+
+                <a class="my-account" href="login-ptbr.html">
+                    <img class="current-user" src="../icons/account.svg">
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Fim headers -->
+
+    <!-- MOBILE HEADER -->
+
+    <div class="mob-header1">
+        <div class='opportunities-symbol'>
+            <img class='networking-icon' src='../icons/networking.svg'>
+            <p class='header-text'>Oportunidades</p>
+        </div>
+
+        <div class='support-symbol'>
+            <img class='support-icon' src='../icons/support.png'>
+            <p class='header-text'>Equipe de suporte</p>
+        </div>
+    </div>
+    <!-- fim mob-header1 -->
+
+    <!-- mob-header2 -->
+    <div class="mob-header2">
+        <div class="mob-h2-top">
+
+            <a href="index-ptbr.html" class="mob-h2-mid">
+                <img class="img-logo" src="../icons/logosite.png">
+            </a>
+
+            <div class="mob-h2-right">
+                <div class="cart-n-account">
+                    <a class="cart" href="cart-ptbr.html">
+                        <img class="cart-icon" src="../icons/cart-shopping.svg">
+                    </a>
+
+                    <a class="my-account"  href="login-ptbr.html">
+                        <img class="current-user" title='Algo' src="../icons/account.svg">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="mob-h2-bottom">
+            <input class="mob-input" type="text">
+            <img src="../icons/search.svg" class="mob-lupa"></div>    
+    </div>
+    <!-- FIM DO MOB HEADER 2 -->
+
+
+
+    <div id="product-box">
+        <!-- left side -->
+        <div class="product-img">
+            <div id="img-block">
+                <img id="img" alt="">
+            </div>
+            <div class="other-imgs">
+                <div class="sub-img" onmousemove="changeImg(0)"><img id="preview" src="" alt=""></div>
+                <div class="sub-img" onmousemove="changeImg(1)"><img id="preview1" src="" alt=""></div>
+            </div>
+        </div>
+
+
+
+
+        <!-- right side -->
+
+        <div class="product-view">
+            <div class="product-top">
+                <div id="product-title"></div>
+                <div id="product-function"></div>
+                <div onclick="abrirModal('../images/ne555-diagram.png')" id="schematic">
+                    <!-- <img class="scheme-img" src="icons/circuit.svg" alt=""> -->
+                    Exemplo
+                </div>
+                <div id="modal" class="modal" onclick="fecharModal()">
+                    <span class="fechar" onclick="fecharModal()">×</span>
+                    <img class="modal-conteudo" id="imagemModal">
+                </div>
+
+
+            </div>
+            <div id="product-desc">
+                <div class="product-description">
+                    <div id="gradient-effect"></div>
+                    <p id="product-description">
+
+                    </p>
+                    <div onclick="toggleText()" id="readMoreBtn">Ler mais</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="add-cart">
+
+            <div class="price">
+                <div class="price-txt">Preço:</div>
+                <div id="price-value">U$ </div>
+            </div>
+
+
+            <div class="qtd-n-button">
+                <div class="item-quantity-box">
+                    <div onclick="decreaseValue()" class="minus">
+                        <img src="../icons/minus.svg" alt="">
+                    </div>
+                    <div id="real-quantity"></div>
+                    <div onclick="increaseValue()" class="plus">
+                        <img src="../icons/plus.svg" alt="">
+                    </div>
+                </div>
+                <div id="addCart-button">
+                    <img class="cart-icon" src="../icons/cart-shopping-white.svg">
+                    Adicionar ao carrinho
+                </div>
+            </div>
+
+            <div class="zipCode-box">
+                <div class="zip-text">Calcular código zip</div>
+                <div id="zip-input">
+                    <input placeholder="Zip code" type="text"></input>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <div class='footer'>
+
+        <div class='footer-topics'>
+
+            <div class='topic'>
+
+                <div class='topic-title'>
+                    Sobre MikroFET
+                </div>
+
+                <div class='topic-content'>
+                    <div class='contents'>
+                        Quem somos nós
+                    </div>
+                    <div class='contents'>
+                        Relação com investidores
+                    </div>
+                    <div class='contents'>
+                        Carreiras
+                    </div>
+                    <div class='contents'>
+                        Responsabilidade corporativa
+                    </div>
+                    <div class='contents'>
+                        Media center
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class='topic'>
+                <div class='topic-title'>
+                    Conecte-se conosco
+                </div>
+                <div class='topic-content'>
+                    <div class='contents'>
+                        Contacte escritórios da MKFET
+                    </div>
+                    <div class='contents'>
+                        Encontre distribuidores
+                    </div>
+                    <div class='contents'>
+                        Notícias
+                    </div>
+                    <div class='contents'>
+                        Comunidade
+                    </div>
+                    <div class='contents'>
+                        Eventos & treinamento
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class='topic'>
+                <div class='topic-title'>
+                    Suporte
+                </div>
+
+                <div class='topic-content'>
+                    <div class='contents'>
+                        Fóruns MikroFET
+                    </div>
+                    <div class='contents'>
+                        Ajuda de design
+                    </div>
+                    <div class='contents'>
+                        Suporte técnico
+                    </div>
+                    <div class='contents'>
+                        Controle de exportação de dados
+                    </div>
+                    <div class='contents'>
+                        PCNs
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class='footer-bottom'>
+            © Copyright 2002-2024 MikroFET Technology Inc. Todos os direitos reservados.
+        </div>
+
+
+    </div>   
+
+    <script src="../scripts/vmore-ptbr.js"></script>
+    <!-- <script src="scripts/index.js"></script> -->
+</body>
+
+</html>

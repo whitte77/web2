@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../styles/general.css" rel="stylesheet">
+    <link href="../styles/header1-en.css" rel="stylesheet">
+    <link href="../styles/header2.css" rel="stylesheet">
+    <link href="../styles/login.css" rel="stylesheet">
+    <link href="../styles/footer.css" rel="stylesheet">
+
+
+    <!-- <link rel="icon" type="image/png" sizes="48x48" href="icons/logosite.png"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="header1">
+
+        <div class="header1-left-section"></div>
+
+        <div class="header1-middle-section">
+            <div class="header1-middle-op">
+                <div class='opportunities-symbol'>
+                    <img class='networking-icon' src='../icons/networking.svg'>
+                    <p class='header-text'>Opportunities</p>
+                </div>
+            </div>
+            <div class="header1-middle-sup">
+                <div class='support-symbol'>
+                    <img class='support-icon' src='../icons/support.png'>
+                    <p class='header-text'>Support Team</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header1-right-section">
+
+            <div>
+                <a class='header1-lang-en'>
+                English
+            </div>
+
+            <a class="header1-lang-br" href="login-ptbr.html">
+                Portuguese
+            </a>
+            <!-- <div class="header1-lang-br">Portuguese</div> -->
+        </div>
+    </div>
+    </div>
+
+    <!-- header 2 -->
+    <div class="header2">
+
+        <a class="left-section" href='../index.html'>
+            <img class="img-logo" src="../icons/logosite.png">
+        </a>
+
+        <div class="middle-section">
+
+            <select>
+                <option>All</option>
+                <option>Integrated Circuits</option>
+                <option>Transistors</option>
+                <option>Modules</option>
+            </select>
+            <input placeholder="Search for a product" type="search">
+
+            <div class='search-box'>
+                <img class="lupa" src="../icons/lupa.svg">
+            </div>
+
+        </div>
+
+
+        <div class="right-section">
+            <div class="about">
+                About Us
+            </div>
+
+            <div class="cart-n-account">
+                <a class="cart" href="cart.html">
+                    <img class="cart-icon" src="../icons/cart-shopping.svg">
+                </a>
+
+                <a class="my-account" href="login.html">
+                    <img class="current-user" src="../icons/account.svg">
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Fim headers -->
+
+    <!-- MOBILE HEADER -->
+
+    <div class="mob-header1">
+        <div class='opportunities-symbol'>
+            <img class='networking-icon' src='../icons/networking.svg'>
+            <p class='header-text'>Opportunities</p>
+        </div>
+
+        <div class='support-symbol'>
+            <img class='support-icon' src='../icons/support.png'>
+            <p class='header-text'>Support Team</p>
+        </div>
+    </div>
+    <!-- fim mob-header1 -->
+
+    <!-- mob-header2 -->
+    <div class="mob-header2">
+        <div class="mob-h2-top">
+
+            <a href="index.html" class="mob-h2-mid">
+                <img class="img-logo" src="../icons/logosite.png">
+            </a>
+
+            <div class="mob-h2-right">
+                <div class="cart-n-account">
+                    <a class="cart" href="cart.html">
+                        <img class="cart-icon" src="../icons/cart-shopping.svg">
+                    </a>
+
+                    <a class="my-account"  href="login.html">
+                        <img class="current-user" title='Algo' src="../icons/account.svg">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="mob-h2-bottom">
+            <input class="mob-input" type="text">
+            <img src="../icons/search.svg" class="mob-lupa"></div>    
+    </div>
+    <!-- FIM DO MOB HEADER 2 -->
+
+    <div class='login-block'>
+        <div class='log-in'>
+
+
+            <div class='login-content'>
+
+
+                <div class='login-top'>
+                    <!-- <div class='login-title'>Welcome Back</div> -->
+                    <div class='login-description'>Access with your credentials</div>
+                </div>
+
+                <form method="get" id="form" action="../index.html">
+                    <div class='mail-n-password'> 
+                        <div class='mail'>
+                            <input size=20 id="email" placeholder='Email' type='email' required>
+                        </div>
+                        <div class='password'>
+                            <input required id="password" maxlength="12" minlength="8" placeholder='Password' type='password'>
+                        </div>
+                        <div class='pass-recovery'>Recovery password</div>
+                    </div>
+
+                    <div class="bottom-box">
+                        <div class="signin-box">
+
+                            <button id='signin'>Sign In</button>
+                            <p class='login-option'>Or continue with</p>
+                        </div>
+
+                        <div class='social'>
+
+                            <div class='social-icon'>
+                                <img src='../icons/google.svg'>
+                            </div>
+                            <div class='social-icon'>
+                                <img src='../icons/facebook-colored.svg'>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                </form>
+
+                
+                <!-- <div class='login-button'>Sign In</div> -->
+            </div>
+        </div>
+
+        <div class="new-account">
+            <p class="new-here">New here?</p>
+            <button class="create-acc">Create new account</button>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class='footer'>
+
+        <div class='footer-topics'>
+
+            <div class='topic'>
+
+                <div class='topic-title'>
+                    About MikroFET
+                </div>
+
+                <div class='topic-content'>
+                    <div class='contents'>
+                        Who we are
+                    </div>
+                    <div class='contents'>
+                        Investor relations
+                    </div>
+                    <div class='contents'>
+                        Carrers
+                    </div>
+                    <div class='contents'>
+                        Corporate responsibility
+                    </div>
+                    <div class='contents'>
+                        Media center
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class='topic'>
+                <div class='topic-title'>
+                    Connect with us
+                </div>
+                <div class='topic-content'>
+                    <div class='contents'>
+                        Contact MKFET offices
+                    </div>
+                    <div class='contents'>
+                        Find distributors
+                    </div>
+                    <div class='contents'>
+                        Newsroom
+                    </div>
+                    <div class='contents'>
+                        Community
+                    </div>
+                    <div class='contents'>
+                        Events & trainings
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class='topic'>
+                <div class='topic-title'>
+                    Support
+                </div>
+
+                <div class='topic-content'>
+                    <div class='contents'>
+                        MikroFET forums
+                    </div>
+                    <div class='contents'>
+                        Design help
+                    </div>
+                    <div class='contents'>
+                        Technical support
+                    </div>
+                    <div class='contents'>
+                        Export control data
+                    </div>
+                    <div class='contents'>
+                        PCNs
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class='footer-bottom'>
+            © Copyright 2002-2024 MikroFET Technology Inc. All rights reserved.
+        </div>
+
+
+    </div>
+    <script src='../scripts/login.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.header1 {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: white;
+  
+  font-family: Roboto, Arial;  
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+.header1-left-section {
+  width: 25%;
+}
+
+.header1-middle-section {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 12pt;
+  gap: 5%;
+  justify-content: center;
+}
+
+.opportunities-symbol {
+  display: flex;
+  gap: 8px;
+}
+
+.opportunities-symbol:hover,
+.support-symbol:hover {
+  cursor: pointer;
+}
+
+.networking-icon {
+  height: 20px;
+}
+
+.support-symbol {
+  display: flex;
+  gap: 8px;
+}
+
+.header-text:hover {
+  border-bottom: 1.5px solid #3186a0;
+  color: #3186a0;
+}
+
+.support-icon {
+  height: 18px;
+}
+
+.header1-right-section {
+   display: flex;
+    width: 25%;
+    font-size: 11pt;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3%;
+    gap: 6%;    
+}
+
+.header1-right-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.header1-right-section a:hover {
+  text-decoration: underline;
+}
+
+.header1-lang-en, .header1-lang-br {
+  transition: border-bottom 0.5s;
+  border-bottom: 0;  
+  cursor: pointer;
+}
+
+.mob-header1 {
+  display: none;
+  align-items: center;
+  justify-content:center;
+  gap: 15px;
+  font-family: Roboto;
+  font-size: 12pt;
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+
+@media (max-width: 768px) {
+  .header1 {
+    display: none;
+  }
+
+  .mob-header1 {
+    display: flex;
+    /* background: green; */
+    height: 50px;
+    width: 100%;
+  }
+}

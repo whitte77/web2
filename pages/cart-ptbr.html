@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/general.css" rel="stylesheet">
+    <link href="../styles/cart.css" rel="stylesheet">
+    <link href="../styles/header1-en.css" rel="stylesheet">
+    <link href="../styles/header2.css" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Carrinho</title>
+</head>
+
+<body>
+
+    <div class="header1">
+
+        <div class="header1-left-section"></div>
+
+        <div class="header1-middle-section">
+            <div class="header1-middle-op">
+                <div class='opportunities-symbol'>
+                    <img class='networking-icon' src='../icons/networking.svg'>
+                    <p class='header-text'>Oportunidades</p>
+                </div>
+            </div>
+            <div class="header1-middle-sup">
+                <div class='support-symbol'>
+                    <img class='support-icon' src='../icons/support.png'>
+                    <p class='header-text'>Equipe de suporte</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header1-right-section">
+
+            <div> <a class='header1-lang-en' href="cart.html">
+                Inglês</a>
+            </div>
+
+            <a class="header1-lang-br">
+                Português
+            </a>
+            <!-- <div class="header1-lang-br">Portuguese</div> -->
+        </div>
+    </div>
+    </div>
+
+    <!-- header 2 -->
+    <div class="header2">
+
+        <a class="left-section" href='../index-ptbr.html'>
+            <img class="img-logo" src="../icons/logosite.png">
+        </a>
+
+        <div class="middle-section">
+
+            <select>
+                <option>Tudo</option>
+                <option>Circuitos integrados</option>
+                <option>Transistores</option>
+                <option>Módulos</option>
+            </select>
+            <input placeholder="Procurar por um produto" type="search">
+
+            <div class='search-box'>
+                <img class="lupa" src="../icons/lupa.svg">
+            </div>
+
+        </div>
+
+
+        <div class="right-section">
+            <div class="about">
+                Sobre nós
+            </div>
+
+            <div class="cart-n-account">
+                <a class="cart" href="cart-ptbr.html">
+                    <img class="cart-icon" src="../icons/cart-shopping.svg">
+                </a>
+
+                <a class="my-account" href="login-ptbr.html">
+                    <img class="current-user" src="../icons/account.svg">
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Fim headers -->
+
+    <!-- MOBILE HEADER -->
+
+    <div class="mob-header1">
+        <div class='opportunities-symbol'>
+            <img class='networking-icon' src='../icons/networking.svg'>
+            <p class='header-text'>Oportunidades</p>
+        </div>
+
+        <div class='support-symbol'>
+            <img class='support-icon' src='../icons/support.png'>
+            <p class='header-text'>Equipe de suporte</p>
+        </div>
+    </div>
+    <!-- fim mob-header1 -->
+
+    <!-- mob-header2 -->
+    <div class="mob-header2">
+        <div class="mob-h2-top">
+
+            <a href="index.html" class="mob-h2-mid">
+                <img class="img-logo" src="../icons/logosite.png">
+            </a>
+
+            <div class="mob-h2-right">
+                <div class="cart-n-account">
+                    <a class="cart" href="cart.html">
+                        <img class="cart-icon" src="../icons/cart-shopping.svg">
+                    </a>
+
+                    <a class="my-account"  href="login.html">
+                        <img class="current-user" title='Algo' src="../icons/account.svg">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="mob-h2-bottom">
+            <input class="mob-input" type="text">
+            <img src="../icons/search.svg" class="mob-lupa"></div>    
+    </div>
+    <!-- FIM DO MOB HEADER 2 -->
+
+
+    <!-- <div class="top-logo"></div> -->
+    <div class="payment-stages">
+        <div class="stages-box">
+            <div class="cart-stage">CARRINHO</div>
+            <div class="identification-stage">IDENTIFICAÇÃO</div>
+            <div class="confirmed-stage">CONFIMADO</div>
+        </div>
+    </div>
+
+
+
+    <!-- <button id="teste"></button> -->
+    <div id="products">
+        <div class="captions">
+            <div class="caption-name">
+                <span class="prod">Produto</span>
+                <span class="qtd">Quantidade</span>
+                <span class="value">Valor</span>
+                <span class="total">Total</span>
+            </div>
+        </div>
+
+        <!-- dynamic products -->
+        <div id="items">
+            <!-- <div class="img-description">
+                <img src="https://cdn.awsli.com.br/500x500/2599/2599375/produto/216446118f30f556891.jpg" alt=""
+                    id="item-img">
+                <div class="item-description">
+                    <div class="desc-title">NE555</div>
+                    <div class="desc-txt">timer IC used for timing, pulse generation, and oscillation.</div>
+                </div>
+            </div>
+
+            <div class="item-quantity-box">
+                <div onclick="decreaseValue()" id="minus">
+                    <img src="../icons/minus.svg" alt="">
+                </div>
+                <div class="real-quantity"></div>
+                <div onclick="increaseValue()" id="plus">
+                    <img src="../icons/plus.svg" alt="">
+                </div>
+            </div>
+
+            <div id="item-value"></div>
+            <div class="total-item-value"></div>
+            <div class="trash-bin">
+                <img src="../icons/trash-bin.svg" alt="trash" class="trash">
+            </div> -->
+        </div>
+
+    </div>
+
+    <div class="calc">
+        <div class="sub">
+            <!-- dynamic subtotal -->
+        </div>
+
+        <div class="calc-bottom">
+            <div class="calc-left">
+                <!-- prazo / promo -->
+                <!-- for shipping policies information -->
+            </div>
+
+            <div class="summary">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/cart.js"></script>
+</body>
+
+</html>

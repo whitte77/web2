@@ -1,0 +1,105 @@
+.header1 {
+  display: flex;
+  height: 50px;
+  background: white;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+.header1 > .header1-left-section,
+.header1 > .header1-middle-section,
+.header1 > .header1-right-section {
+  flex: 1;
+}
+
+.header1-left-section, .header1-middle-section, .header1-right-section, .header1-langs {
+  display: flex;
+  align-items: center;
+}
+
+.header1-middle-section {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 95%;
+  gap: 5%;
+  justify-content: center;
+}
+
+.opportunities-symbol {
+  display: flex;
+  gap: 8px;
+}
+
+.opportunities-symbol:hover,
+.support-symbol:hover {
+  cursor: pointer;
+}
+
+.networking-icon {
+  height: 18px;
+}
+
+.support-symbol {
+  display: flex;
+  gap: 8px;
+}
+
+.header-text:hover {
+  border-bottom: 1.5px solid #3186a0;
+  color: #3186a0;
+}
+
+.support-icon {
+  height: 18px;
+}
+
+.header1-right-section {
+   display: flex;
+  width: 25%;
+  font-size: 90%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 3%;
+  gap: 6%;  
+  }
+
+.header1-right-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.header1-right-section a:hover {
+  text-decoration: underline;
+}
+
+
+.header1-lang-en, .header1-lang-br {
+  cursor: pointer;
+}
+
+@media(max-width: 600px) {
+  .header1 {
+    height: 50px;
+  }
+  .header1-middle-section {
+    font-size: 12pt;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .networking-icon,
+  .support-icon {
+    height: 8px;
+  }
+
+  .header1-right-section {
+  font-size: 11pt;
+  justify-content: flex-end;
+  margin-right: 2%;
+  gap: 5px;
+  }
+}
+
+

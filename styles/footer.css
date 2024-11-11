@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d8aa8;
+  width: 100%;
+  height: 280px;
+}
+
+.footer-topics {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  gap: 1%;
+}
+
+.footer-bottom {
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 15%;
+  font-size: 11pt;
+  color: white;
+}
+
+.topic {
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.topic-title {
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18pt;
+  font-family: Roboto;
+  font-weight: 700;
+  color: white;
+}
+
+.topic-content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4%;
+  font-family: Roboto;
+  font-size: 11pt;
+  font-weight: 500;
+  color: white;
+}
+
+.contents:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .topic-title {
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    font-family: Roboto;
+    font-weight: 700;
+    color: white;
+  }
+  .contents {
+    font-size: 11pt;
+  }
+
+  .topic {
+    gap: 8px;
+  }
+  
+}
