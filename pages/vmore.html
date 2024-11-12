@@ -200,38 +200,42 @@
 
         <div class="add-cart">
 
-            <div class="price">
-                <div class="price-txt">Price:</div>
-                <div id="price-value">U$ </div>
-            </div>
+            <div class="cart-element">
+                <div class="price">
+                    <div class="price-txt">Price:</div>
+                    <div id="price-value">U$ </div>
+                </div>
 
 
-            <div class="qtd-n-button">
-                <div class="item-quantity-box">
-                    <div onclick="decreaseValue()" class="minus">
-                        <img src="../icons/minus.svg" alt="">
+                <div class="qtd-n-button">
+                    <div class="item-quantity-box">
+                        <div onclick="decreaseValue()" class="minus">
+                            <img src="../icons/minus.svg" alt="">
+                        </div>
+                        <div id="real-quantity"></div>
+                        <div onclick="increaseValue()" class="plus">
+                            <img src="../icons/plus.svg" alt="">
+                        </div>
                     </div>
-                    <div id="real-quantity"></div>
-                    <div onclick="increaseValue()" class="plus">
-                        <img src="../icons/plus.svg" alt="">
+                    <div id="addCart-button">
+                        <img class="cart-icon" src="../icons/cart-shopping-white.svg">
+                        Add to Cart
                     </div>
                 </div>
-                <div id="addCart-button">
-                    <img class="cart-icon" src="../icons/cart-shopping-white.svg">
-                    Add to Cart
+
+                <div class="zipCode-box">
+                    <div class="zip-text">Calculate zip code</div>
+                    <div id="zip-input">
+                        <input placeholder="Zip code" type="text"></input>
+                    </div>
                 </div>
             </div>
 
-            <div class="zipCode-box">
-                <div class="zip-text">Calculate zip code</div>
-                <div id="zip-input">
-                    <input placeholder="Zip code" type="text"></input>
-                </div>
-            </div>
         </div>
 
     </div>
 
+    <!-- <p style="height:300px">teste</p> -->
 
 
 
@@ -328,7 +332,6 @@
     </div>
 
     <script src="../scripts/vmore.js"></script>
-    <!-- <script src="scripts/index.js"></script> -->
 </body>
 
 </html>
