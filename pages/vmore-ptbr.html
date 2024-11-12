@@ -198,36 +198,38 @@
 
         <div class="add-cart">
 
-            <div class="price">
-                <div class="price-txt">Preço:</div>
-                <div id="price-value">U$ </div>
-            </div>
+            <div class="cart-element">
+                <div class="price">
+                    <div class="price-txt">Preço:</div>
+                    <div id="price-value">U$ </div>
+                </div>
 
 
-            <div class="qtd-n-button">
-                <div class="item-quantity-box">
-                    <div onclick="decreaseValue()" class="minus">
-                        <img src="../icons/minus.svg" alt="">
+                <div class="qtd-n-button">
+                    <div class="item-quantity-box">
+                        <div onclick="decreaseValue()" class="minus">
+                            <img src="../icons/minus.svg" alt="">
+                        </div>
+                        <div id="real-quantity"></div>
+                        <div onclick="increaseValue()" class="plus">
+                            <img src="../icons/plus.svg" alt="">
+                        </div>
                     </div>
-                    <div id="real-quantity"></div>
-                    <div onclick="increaseValue()" class="plus">
-                        <img src="../icons/plus.svg" alt="">
+                    <div id="addCart-button">
+                        <img class="cart-icon" src="../icons/cart-shopping-white.svg">
+                        Adicionar ao carrinho
                     </div>
                 </div>
-                <div id="addCart-button">
-                    <img class="cart-icon" src="../icons/cart-shopping-white.svg">
-                    Adicionar ao carrinho
+
+                <div class="zipCode-box">
+                    <div class="zip-text">Calcular CEP</div>
+                    <div id="zip-input">
+                        <input placeholder="Zip code" type="text"></input>
+                    </div>
                 </div>
             </div>
 
-            <div class="zipCode-box">
-                <div class="zip-text">Calcular código zip</div>
-                <div id="zip-input">
-                    <input placeholder="Zip code" type="text"></input>
-                </div>
-            </div>
         </div>
-
     </div>
 
 
