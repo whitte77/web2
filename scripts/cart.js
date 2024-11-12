@@ -24,7 +24,7 @@ function changeQuantity(id, value) {
                     quantity.innerText = produtoCarrinho.qtd;
 
                     // Atualizar o total do item
-                    total.innerText = (preco * produtoCarrinho.qtd).toFixed(2);
+                    total.innerText = "U$ " + (preco * produtoCarrinho.qtd).toFixed(2);
 
 
 
@@ -53,9 +53,8 @@ window.onload = () => {
     const cartContainer = document.getElementById('items');
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-    // Caso o carrinho esteja vazio
     if (carrinho.length === 0) {
-        cartContainer.innerHTML = '<p>O carrinho está vazio</p>';
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
         return;
     }
 
@@ -96,10 +95,10 @@ window.onload = () => {
                         </div>
                     </div>
 
-                    <div id="item-value">${produto.preco}</div>
-                    <div class="total-item-value-${produtoCarrinho.id}">${(preco * produtoCarrinho.qtd).toFixed(2)}</div>
+                    <div id="item-value">U$ ${produto.preco}</div>
+                    <div class="total-item-value-${produtoCarrinho.id}">U$ ${(preco * produtoCarrinho.qtd).toFixed(2)}</div>
                     <div class="trash-bin">
-                        <img src="../icons/trash-bin.svg" alt="trash" class="trash">
+                        <img onclick="removeItem('${produtoCarrinho.id}')" src="../icons/trash-bin.svg" alt="trash" class="trash">
                     </div>
                     `;
 
@@ -139,3 +138,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+function removeItem(id) {
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    carrinho = carrinho.filter(item => item.id !== id);
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    location.reload();
+}

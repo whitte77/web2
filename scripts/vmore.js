@@ -33,7 +33,6 @@ function changeImg(value) {
   value == 0
     ? img.src = produto.preview.preview1
     : img.src = produto.preview.preview2
-  console.log(produto.preview2)
 }
 
 
